@@ -1,1 +1,0 @@
-# geoz-lab.github.io
