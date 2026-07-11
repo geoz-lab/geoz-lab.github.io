@@ -92,7 +92,7 @@
   var rotator = document.getElementById("rotator");
   var words = [
     "ML Researcher", "LLM Engineer", "RL Enthusiast",
-    "Generative AI", "PhD Candidate @ Stanford"
+    "Generative AI", "AI × Sustainability", "PhD Candidate @ Stanford"
   ];
   if (rotator && !reduceMotion) {
     var wi = 0, ci = 0, deleting = false;
