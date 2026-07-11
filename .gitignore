@@ -1,0 +1,4 @@
+# Local-only working files — not part of the published site
+_prev-local/
+tmp/
+.DS_Store

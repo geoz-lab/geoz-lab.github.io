@@ -1,538 +1,686 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GeoZ Lab</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-<!--
-Tooplate 2117 Infinite Loop
-https://www.tooplate.com/view/2117-infinite-loop
--->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geo Zhang — ML / AI Researcher & Engineer</title>
+  <meta name="description" content="Geo Zhang — PhD candidate at Stanford working on LLMs, generative AI, reinforcement learning, and applied machine learning across research and industry." />
+  <meta name="author" content="Geo Zhang" />
 
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#infinite" class="navbar-brand">GeoZ Lab</a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#infinite">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">Interests</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#testimonials">People</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#publications">Publications</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Geo Zhang — ML / AI Researcher & Engineer" />
+  <meta property="og:description" content="Stanford PhD candidate working on LLMs, generative AI, reinforcement learning, and applied machine learning." />
+  <meta property="og:url" content="https://geoz-lab.github.io" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Geo Zhang — home">
+        <span class="nav__mark">GZ</span>
+        <span class="nav__name">Geo Zhang</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#energy">Energy</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav__cta">Contact</a>
       </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">GeoZ Lab</h2>
-            <p class="tm-hero-subtitle">
-              Complex Flow and Transport in Porous Media
-              <br>Geoscience Researches
-            </p>
-        </div>        
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow"><span class="dot"></span> Stanford University · Energy Resources Engineering</p>
+        <h1 class="hero__title">Geo&nbsp;Zhang</h1>
+        <p class="hero__role">
+          <span class="mono">&gt;</span>
+          <span class="rotator" id="rotator" aria-live="polite">ML Researcher</span>
+          <span class="cursor" aria-hidden="true">_</span>
+        </p>
+        <p class="hero__lede">
+          PhD candidate building at the intersection of <strong>large language models</strong>,
+          <strong>generative AI</strong>, and <strong>reinforcement learning</strong> — turning
+          frontier ML research into systems that work in production.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View Work</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="https://github.com/geoz-lab" target="_blank" rel="noopener" aria-label="GitHub" class="iconbtn" data-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/geozhang" target="_blank" rel="noopener" aria-label="LinkedIn" class="iconbtn" data-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.25h4.9V23.5H.5V8.25Zm7.9 0h4.7v2.08h.07c.65-1.23 2.25-2.53 4.63-2.53 4.95 0 5.86 3.26 5.86 7.5v8.2h-4.9v-7.27c0-1.73-.03-3.96-2.41-3.96-2.41 0-2.78 1.88-2.78 3.83v7.4H8.4V8.25Z"/></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=PZgIiEoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" class="iconbtn" data-label="Scholar">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2 1 8.5 12 15l9-5.32V16h2V8.5L12 2Zm-7 9.9v3.35C5 17.32 8.13 19 12 19s7-1.68 7-3.75V11.9l-7 4.14-7-4.14Z"/></svg>
+          </a>
+          <a href="mailto:gmzhang@stanford.edu" aria-label="Email" class="iconbtn" data-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm10 8.2 8.5-5.7H3.5L12 12.2Zm0 2.3L3 8.4V18h18V8.4l-9 6.1Z"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="tm-next tm-intro-next">
-        <a href="#whatwedo" class="text-center tm-down-arrow-link">
-          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
-        </a>
-      </div>      
+      <ul class="hero__stats" aria-label="Highlights">
+        <li><span class="num" data-count="15">0</span><span class="plus">+</span><span class="lbl">Publications</span></li>
+        <li><span class="num" data-count="150">0</span><span class="plus">+</span><span class="lbl">Citations</span></li>
+        <li><span class="num" data-count="60">0</span><span class="plus">+</span><span class="lbl">Peer Reviews</span></li>
+      </ul>
     </section>
 
-    <section id="whatwedo" class="tm-section-pad-top">
-      
-      <div class="container">
-
-            <div class="row tm-content-box"><!-- first row -->
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">Interests</h2>
-                        <p class="mb-4 tm-intro-text">
-                          The research interests ...
-                    </div>
-                </div>
-
-            </div><!-- first row -->
-            
-            <div class="row tm-content-box"><!-- second row -->
-        		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Multi-physicochemical Multiphase Flow</h2>
-                        <p class="mb-4 tm-intro-text">
-                        123.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Characterization of Porous Media</h2>
-                        <p class="mb-4 tm-intro-text">
-                          123.</p>
-                    </div>
-                </div>
-
-            </div><!-- second row -->
-            
-            <div class="row tm-content-box"><!-- third row -->
-        		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Oil and Gas Recovery</h2>
-                        <p class="mb-4 tm-intro-text">
-                          123.</p>
-                          <div class="tm-continue">
-                          <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
-                        </div>
-                  </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Carbon Dioxide and Hydrogen Storage</h2>
-                        <p class="mb-4 tm-intro-text">
-                          123.</p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div><!-- third row -->
-
-        </div>
-      
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about reveal">
+        <p>
+          I'm a PhD candidate in <strong>Energy Resources Engineering at Stanford University</strong>
+          (Frank G. Miller Fellow), passionate about <strong>tech and sustainability</strong>. I
+          specialize in <strong>omni-, vision-, and large / small language models</strong>, deep
+          learning, physical modeling, numerical simulation, and experimental prototyping — pairing
+          fine-tuning (SFT, DPO, PPO, GRPO, RLHF), RAG, and agents with
+          <strong>reinforcement learning</strong> and <strong>generative vision</strong>.
+        </p>
+        <p>
+          I've shipped ML systems at <strong>TikTok</strong>, <strong>Valuenex</strong>,
+          <strong>Chevron</strong>, and <strong>Fervo Energy</strong>, and authored 15+ papers
+          (150+ citations) across AI and computational science. I care about the full arc — from a
+          research idea to a model running reliably at scale — and about translating between
+          researchers, engineers, and stakeholders to get there.
+        </p>
+      </div>
     </section>
-    
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
-      <div class="container tm-testimonials-content">
-        <div class="row">
-          <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white text-center mb-4 tm-section-title">People</h2>
-            <p class="mx-auto tm-section-desc text-center">
-                 Web owner.
-              </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
-              <div class="tm-testimonials-carousel">
 
-                <figure class="tm-testimonial-item">
-                  <img src="img/researcher-img-01.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>....</blockquote> 
-                  <figcaption>Geo Zhang</figcaption>
-                </figure>
+    <!-- Energy & Sustainability -->
+    <section class="section" id="energy">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Energy &amp; Sustainability</h2>
+      </div>
 
-              </div>
+      <div class="about reveal">
+        <p>
+          My work sits at the center of the <strong>energy transition</strong> — pairing machine
+          learning with subsurface science to make <strong>carbon storage</strong>,
+          <strong>geothermal energy</strong>, and <strong>hydrogen storage</strong> safer, cheaper,
+          and easier to scale. Across a Stanford PhD and industry roles at
+          <strong>Chevron</strong> and <strong>Fervo Energy</strong>, I've built models that turn
+          messy reservoir and market data into decisions that cut cost and de-risk deployment —
+          including full-chain carbon-capture analysis with the Chan Zuckerberg Initiative that
+          surfaced <strong>$2M+</strong> in potential savings.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__glyph mono">CO₂</div>
+          <h3>Geologic Carbon Storage</h3>
+          <p>Pore-scale mechanisms of CO₂ sequestration and salt precipitation in heterogeneous media, plus XGBoost surrogate models predicting value-of-information with 90% accuracy to accelerate storage decisions.</p>
+          <ul class="tags">
+            <li>CCS</li><li>Sequestration</li><li>Surrogate models</li><li>Uncertainty</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__glyph mono">♨</div>
+          <h3>Geothermal &amp; Hydrogen</h3>
+          <p>Integrating carbon sequestration into enhanced geothermal systems via surface dissolution, and visualizing capillary entry at reservoir–caprock interfaces to enable safe subsurface hydrogen storage.</p>
+          <ul class="tags">
+            <li>EGS</li><li>H₂ storage</li><li>Caprock integrity</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__glyph mono">↗</div>
+          <h3>Carbon Markets &amp; Policy</h3>
+          <p>LLM-driven forecasting of California carbon-credit prices — fusing market sentiment, trading volumes, and policy signals into directional forecasts with 80% accuracy to inform climate-finance decisions.</p>
+          <ul class="tags">
+            <li>Carbon credits</li><li>LLM forecasting</li><li>Climate finance</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__glyph mono">⌬</div>
+          <h3>Sustainable Energy Systems</h3>
+          <p>Microfluidic porous-media platforms and generative digital-rock pipelines that characterize subsurface flow, advancing sustainable energy solutions and clean-energy reservoir engineering.</p>
+          <ul class="tags">
+            <li>Microfluidics</li><li>Digital rock</li><li>Porous media</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="energy__link reveal">
+        More on my energy &amp; sustainability work →
+        <a href="https://www.linkedin.com/in/geozhang/" target="_blank" rel="noopener">LinkedIn profile ↗</a>
+      </p>
+    </section>
+
+    <!-- Expertise -->
+    <section class="section" id="expertise">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Expertise</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__glyph mono">{ }</div>
+          <h3>LLMs &amp; Generative AI</h3>
+          <p>Model fine-tuning (SFT, DPO, PPO, RLOO, GRPO, RLHF), RAG pipelines, LLM agents, harness engineering, synthetic data generation, omnimodal, LoRA / PEFT.</p>
+          <ul class="tags">
+            <li>vLLM</li><li>SGLang</li><li>RAG</li><li>Agents</li><li>PEFT</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__glyph mono">∑</div>
+          <h3>ML &amp; Deep Learning</h3>
+          <p>Supervised &amp; unsupervised learning, time-series forecasting, computer vision (ResUNet, diffusion models), NLP, and feature engineering.</p>
+          <ul class="tags">
+            <li>PyTorch</li><li>TensorFlow</li><li>XGBoost</li><li>LightGBM</li><li>Diffusion</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__glyph mono">⧉</div>
+          <h3>Data &amp; Infrastructure</h3>
+          <p>Large-scale batch pipelines and distributed compute across HPC and cloud environments.</p>
+          <ul class="tags">
+            <li>Spark</li><li>Hive</li><li>MapReduce</li><li>Slurm HPC</li><li>MongoDB</li><li>AWS / Azure / GCP</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__glyph mono">⌘</div>
+          <h3>Programming &amp; MLOps</h3>
+          <p>Production engineering, evaluation, and deployment — A/B testing, uncertainty quantification, and pipeline automation.</p>
+          <ul class="tags">
+            <li>Python</li><li>C++</li><li>MATLAB</li><li>Fortran</li><li>SQL</li><li>Git</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <h3>Graduate Research Assistant</h3>
+              <span class="timeline__date mono">Sep 2021 – Present</span>
             </div>
+            <p class="timeline__org">Stanford University · SUETRI-A (Energy Transition Research Institute)</p>
+            <ul>
+              <li>Lead ML + subsurface research applying multimodal LLMs, reinforcement learning, and generative vision to energy-transition problems.</li>
+              <li>Authored 15+ peer-reviewed papers (150+ citations) spanning AI, carbon storage, geothermal, and hydrogen storage.</li>
+            </ul>
           </div>
-        </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <h3>Machine Learning Engineer Intern</h3>
+              <span class="timeline__date mono">Jan 2026 – Jun 2026</span>
+            </div>
+            <p class="timeline__org">TikTok Inc. · San Jose, CA</p>
+            <ul>
+              <li>Developed inventory and reward allocation algorithms to improve supply–demand alignment from product-demand predictions across TikTok's supply-chain network using time-series forecasting models.</li>
+              <li>Designed and optimized merchant quota evaluation and resource allocation workflows with data-driven methods, improving fulfillment center throughput and hub replenishment efficiency at scale.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <h3>AI Engineer Intern</h3>
+              <span class="timeline__date mono">Jun 2025 – Sep 2025</span>
+            </div>
+            <p class="timeline__org">Valuenex Inc. · Palo Alto, CA</p>
+            <ul>
+              <li>Engineered an LLM-powered business intelligence dashboard for Mitsui O.S.K. Lines (MOL Ltd.), integrating internal fleet data, real-time macro-economic feeds, and a RAG pipeline (top-K news retrieval) to surface operational risk alerts, market opportunities, and auto-generated insights.</li>
+              <li>Built a Panama Canal transit delay &amp; risk prediction system fusing historical voyage logs with climate variables (Gatun Lake water level, temperature, solar radiation) to model drought-driven risk using LightGBM (F1 0.76, RMSE 0.755); delivered a KNN model for delay estimation and prescheduling.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <h3>Machine Learning Intern</h3>
+              <span class="timeline__date mono">Jun 2024 – Sep 2024</span>
+            </div>
+            <p class="timeline__org">Chevron Technical Center · Houston, TX</p>
+            <ul>
+              <li>Engineered a scalable Python pipeline to automate batch jobs on Slurm HPC clusters, enabling 1,000+ reservoir simulations daily for synthetic data generation used in ML training.</li>
+              <li>Developed an XGBoost surrogate model for CO₂ sequestration predicting value-of-information metrics with 90% accuracy; applied ensemble-variance analysis to cut parameter uncertainty by up to 50%, accelerating multi-scale decision-making.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <h3>Reservoir Engineer Intern</h3>
+              <span class="timeline__date mono">Jun 2023 – Sep 2023</span>
+            </div>
+            <p class="timeline__org">Fervo Energy · Oakland, CA</p>
+            <ul>
+              <li>Collaborated with the Chan Zuckerberg Initiative on full-chain carbon capture analysis, identifying $2M+ in potential cost reductions for carbon offset projects; built and calibrated CO₂ sequestration models in geothermal reservoirs with sensitivity analysis (paper SPE-218898-MS).</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Selected Projects</h2>
       </div>
-      <div class="tm-bg-overlay"></div>
-    </section>
-    
-
-    <section id="publications" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Publications</h2>
-              <p class="mx-auto tm-section-desc">
-                123.
-              </p>
-          </div>            
-        </div>
-    </section>
-
-
-    <section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Gallery</h2>
-              <p class="mx-auto tm-section-desc">
-                123.
-              </p>
-          </div>            
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="grid tm-gallery">
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 2" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-03.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Image 3" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Sea View</span> Mega City</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-04.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Image 4" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dream Girl <span>Thoughts</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image 5" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Workstation</span> Offices</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image 6" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Just Above <span>The City</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 7" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Another <span>Exercise Time</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 8" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Repeated <span>Image Spot</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                </div>                
-            </div>        
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">RL · Multimodal</span>
+            <a href="https://github.com/geoz-lab/Omni_Trailer_Pick_the_Video_Highlight" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
           </div>
+          <h3>Omni Trailer — RL for Video Highlight Generation</h3>
+          <p>End-to-end multimodal system for automatic video highlight and trailer generation on a Qwen2.5-Omni backbone. An RL framework (GRPO/PPO) optimizes highlight selection without human-labeled timestamps, using a video-language reward model for excitement, emotional impact, and narrative coherence — trained on Stanford Sherlock H100 clusters.</p>
+          <span class="project__date mono">2026 – Present</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Multi-Agent · RL</span>
+            <a href="https://github.com/geoz-lab/oil-gas-trade" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>Multi-Agent Oil &amp; Gas Trading System</h3>
+          <p>A LightGBM forecasting baseline layered with a constitutional signal judge, a 4-agent adversarial debate, and a REINFORCE-trained RL trading robot — fusing classic ML with LLM-agent reasoning for supply-chain and commodity trading decisions.</p>
+          <span class="project__date mono">2026</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">VLM · Safety</span>
+            <a href="https://github.com/geoz-lab/VLM" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>Vision-Language Models for Video Attack Detection</h3>
+          <p>Testing vision-language models (VLMs) to detect inserted / adversarial attacks in short-form videos — probing where multimodal models see manipulated frames and how robustly they flag injected content.</p>
+          <span class="project__date mono">2026</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">RL · Supply Chain</span>
+            <a href="https://github.com/geoz-lab/RL_supply_chain_goods_replenishment" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>RL Supply-Chain Replenishment</h3>
+          <p>An AI-driven supply-chain strategy where RL algorithms (PPO, Q-learning) optimize inventory levels and replenishment timing — the research counterpart to my supply-demand work at TikTok.</p>
+          <span class="project__date mono">2026</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">LLM · RLHF</span>
+            <a href="https://github.com/geoz-lab/LLM-Reinforcement-Learning" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>RL Fine-Tuning of Language Models</h3>
+          <p>Improved a compact Qwen2.5-0.5B model on math reasoning and instruction following via SFT, DPO, and RLOO, served with vLLM for low-latency inference. Boosted Countdown accuracy to 0.81+ (&gt;2× the SFT baseline) using synthetic data, best-of-N sampling, and an external verifier called via MCP at inference.</p>
+          <span class="project__date mono">2025 – Present</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">LLM · Forecasting</span>
+            <a href="https://github.com/geoz-lab/Carbon_Intelligence_Using_LLMs" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>Forecasting Carbon Credit Market with LLMs</h3>
+          <p>Predictive pipeline using Gemini, Claude, and ChatGPT with ensemble methods, integrating market sentiment and multisource data (pricing, volumes, policy documents) to forecast California carbon credit prices — 80% accuracy on long-term directional forecasts. Stanford CS229; paper SPE-224146-MS.</p>
+          <span class="project__date mono">2024 – 2025</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">NLP · BERT</span>
+          </div>
+          <h3>Fine-Tuning BERT for Multiple NLP Tasks</h3>
+          <p>Multi-task BERT-BASE model combining additional pre-training, Siamese BERT-Networks, multi-task heads, loss management, and LoRA — 78% overall accuracy across sentiment analysis, paraphrase detection, and semantic textual similarity. Stanford CS224N.</p>
+          <span class="project__date mono">2024</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">Diffusion · Vision</span>
+            <a href="https://github.com/geoz-lab/rock-gen-texture-pipeline" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>Diffusion-based Generative Digital Rock Pipeline</h3>
+          <p>End-to-end generative-to-production pipeline for synthetic rock imagery using SinDiffusion, with texture-tiling and batch automation cutting generation time by 99%+. Paired with a ResUNet segmentation pipeline (IoU 0.78) for pore structures in SEM images. NSF Nanotechnology Diversity Award; AGU Fall Meeting. Stanford CS230.</p>
+          <span class="project__date mono">2023 – 2025</span>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__tag mono">LLM · Web App</span>
+            <a href="https://github.com/geoz-lab/gas-station-recommendation" target="_blank" rel="noopener" class="project__repo" aria-label="View repository">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0C17.13 5.1 18.1 5.41 18.1 5.41c.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <h3>AI-Powered Gas Station Recommendation</h3>
+          <p>Web app that blends user preferences and vehicle specs into personalized gas-station recommendations — fetching data via the Google Maps API and ranking stations on fuel price, travel time, and reviews with LLM-based analysis.</p>
+          <span class="project__date mono">2025</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+      <div class="section__head reveal">
+        <span class="section__index">06</span>
+        <h2 class="section__title">Publications</h2>
+      </div>
+      <p class="pub__profile reveal">
+        <strong>15+ publications</strong> · <strong>150+ citations</strong> · <strong>60+ peer reviews</strong> —
+        <a href="https://scholar.google.com/citations?user=PZgIiEoAAAAJ" target="_blank" rel="noopener">Google Scholar profile ↗</a>
+      </p>
+      <ol class="pubs">
+        <li class="pub reveal">
+          <span class="pub__year mono">2026</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Li, E., Kovscek, A.R. Data-efficient generation of pore-scale microstructures for rock-on-chip design.</p>
+            <p class="pub__venue">Lab on a Chip <em>(under revision)</em></p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Yin, D., Kim, T.W., Kovscek, A.R. Leveraging large language models for carbon market insights: news sentiment and price dynamics.</p>
+            <p class="pub__venue">SPE Western Regional Meeting · SPE-224146-MS</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <p class="pub__title">Han, Y., <strong>Zhang, G.</strong> Reinforcement learning fine-tuning of language model for instruction following and math reasoning.</p>
+            <p class="pub__venue">arXiv preprint <a href="https://arxiv.org/abs/2506.21560" target="_blank" rel="noopener">arXiv:2506.21560</a></p>
+          </div>
+          <span class="pub__cites mono" title="Citations">1</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Burger, J., Schembre-McCabe, J., Kovscek, A.R. Pore-scale mechanisms of salt precipitation in heterogeneous media under geological carbon storage conditions.</p>
+            <p class="pub__venue">Lab on a Chip · 25(19), 4957–4971</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">5</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <p class="pub__title">Lei, W., Yang, Y., Yang, S., <strong>Zhang, G.</strong>, et al. Advancing sustainable energy solutions with microfluidic porous media.</p>
+            <p class="pub__venue">Lab on a Chip</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">13</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <p class="pub__title">Beine, I., <strong>Zhang, G.</strong>, Kovscek, A.R. Dual-permeability micromodels to visualize mechanical displacement and capillary entry at reservoir–caprock interfaces for hydrogen storage.</p>
+            <p class="pub__venue">AGU Fall Meeting 2025</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2024</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Norbeck, J., Smith, A., Dadi, S., Galban, G.E. Integrating carbon sequestration in enhanced geothermal systems through surface dissolution.</p>
+            <p class="pub__venue">SPE Western Regional Meeting · SPE-218898-MS</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">3</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2024</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Nazari, N., Kovscek, A.R. In situ pH measurement in microfluidic porous media indicated by surfaces functionalized with polyaniline (PAni).</p>
+            <p class="pub__venue">Colloids and Interfaces</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">3</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2024</span>
+          <div class="pub__body">
+            <p class="pub__title">AlNasser, F., <strong>Zhang, G.</strong>, Kovscek, A.R. Microfluidic investigation of ferrofluid-assisted recovery in porous media.</p>
+            <p class="pub__venue">SPE/AAPG/SEG Unconventional Resources Technology Conference · D031S062R001</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">1</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2024</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong> Fine-tuning miniBERT for multi-task learning.</p>
+            <p class="pub__venue">Stanford CS224N · Course project</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2023</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Huang, Z., Kovscek, A.R. Training neural networks for pore-scale rock image segmentation based on small dataset.</p>
+            <p class="pub__venue">AGU Fall Meeting Abstracts 2023 · H51D-06</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2023</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Nazari, N., Kovscek, A.R. Dynamic visualization of solution pH in a polyaniline-coated microfluidic device.</p>
+            <p class="pub__venue">AGU Fall Meeting Abstracts 2023 · H51X-1445</p>
+          </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2022</span>
+          <div class="pub__body">
+            <p class="pub__title">Li, H., Xu, A., <strong>Zhang, G.</strong>, Shan, Y. Rayleigh–Taylor instability under multi-mode perturbation: discrete Boltzmann modeling with tracers.</p>
+            <p class="pub__venue">Communications in Theoretical Physics</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">16</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2021</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Xu, A., Zhang, D., Li, Y., Lai, H., Hu, X. Delineation of the flow and mixing induced by Rayleigh–Taylor instability through tracers.</p>
+            <p class="pub__venue">Physics of Fluids · 33(7), 076105</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">25</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2019</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Zhang, Y., Xu, A., Li, Y. Microflow effects on the hydraulic aperture of single rough fractures.</p>
+            <p class="pub__venue">Advances in Geo-Energy Research</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">33</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2019</span>
+          <div class="pub__body">
+            <p class="pub__title">Haustein, M.A., <strong>Zhang, G.</strong>, Schwarze, R. Segregation of granular materials in a pulsating pumping regime.</p>
+            <p class="pub__venue">Granular Matter</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">11</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2019</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Liu, B., Xu, A., Shan, Y., Li, Y. Morphology effect of surface structures on microchannel flow using the lattice Boltzmann method.</p>
+            <p class="pub__venue">Geofluids</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">9</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2018</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Tian, Y., Li, Y. Numerical study on the mechanism of fluid flow through single rough fractures with different JRC.</p>
+            <p class="pub__venue">Scientia Sinica Physica, Mechanica &amp; Astronomica</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">22</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2017</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Feng, C., Gong, W., Li, Y. Simulation and analysis of the effect of roughness elements on fluid flow through a single fracture based on the lattice Boltzmann method.</p>
+            <p class="pub__venue">Scientia Sinica Physica, Mechanica &amp; Astronomica</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">14</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Awards -->
+    <section class="section" id="awards">
+      <div class="section__head reveal">
+        <span class="section__index">07</span>
+        <h2 class="section__title">Awards &amp; Honors</h2>
+      </div>
+      <div class="awards">
+        <article class="award reveal">
+          <span class="award__year mono">2024</span>
+          <div class="award__body">
+            <h3>URTeC Best of Paper Award</h3>
+            <p>Society of Petroleum Engineers — <em>“Microfluidic investigation of ferrofluid-assisted recovery in porous media”</em></p>
+          </div>
+        </article>
+        <article class="award reveal">
+          <span class="award__year mono">2023</span>
+          <div class="award__body">
+            <h3>Diversity Award — NSF Nanotechnology Competition</h3>
+            <p>For work on generative &amp; segmentation pipelines for pore-scale rock imaging.</p>
+          </div>
+        </article>
+        <article class="award reveal">
+          <span class="award__year mono">2022</span>
+          <div class="award__body">
+            <h3>Frank G. Miller Fellowship</h3>
+            <p>Department of Energy Resources Engineering, Stanford University.</p>
+          </div>
+        </article>
+        <article class="award reveal">
+          <span class="award__year mono">2021</span>
+          <div class="award__body">
+            <h3>Saudi Aramco Research Fellowship</h3>
+            <p>School of Earth, Energy &amp; Environmental Sciences, Stanford University.</p>
+          </div>
+        </article>
+        <article class="award reveal">
+          <span class="award__year mono">2017</span>
+          <div class="award__body">
+            <h3>National Outstanding Graduation Thesis Award</h3>
+            <p>China Society for Rock Mechanics &amp; Engineering — fluid–solid interaction in granular materials (DEM-LBM).</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section__head reveal">
+        <span class="section__index">08</span>
+        <h2 class="section__title">Education</h2>
+      </div>
+      <div class="edu">
+        <article class="edu__item reveal">
+          <div class="edu__top">
+            <h3>Stanford University</h3>
+            <span class="edu__date mono">Expected Aug 2026</span>
+          </div>
+          <p class="edu__degree">Ph.D. in Energy Resources Engineering</p>
+          <p class="edu__meta">Frank G. Miller Fellowship · GPA 3.8 · Stanford, CA</p>
+          <p class="edu__note">Coursework: Transformers &amp; LLMs, Machine Learning, Deep Learning, Reinforcement Learning, NLP, Data Mining, Mining Massive Data Sets.</p>
+        </article>
+
+        <article class="edu__item reveal">
+          <div class="edu__top">
+            <h3>China University of Mining &amp; Technology</h3>
+            <span class="edu__date mono">Jul 2017</span>
+          </div>
+          <p class="edu__degree">B.E. in Civil Engineering</p>
+          <p class="edu__meta">Top 1% · National Scholarship Award · Beijing, China</p>
+        </article>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Contact Us</h2>
-                <p class="mb-5">
-                  Please contact us.
-                </p><br>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
-              <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
-
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.linkedin.com/in/geozhang/" class="item-link">
-                      <i class="far fa-2x fa-comment mr-4"></i>
-                      <span class="mb-0">LinkedIn</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:ge.zhang.phys@gmail.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">ge.zhang.phys@gmail.com</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                      <span class="mb-0">Location</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="tel:5556667788" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">555-666-7788</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">&nbsp;</div>
-            
-            </div>
-            
-            
-        </div><!-- row ending -->
-        
+    <section class="section section--contact" id="contact">
+      <div class="contact reveal">
+        <span class="section__index">09</span>
+        <h2 class="contact__title">Let's build something.</h2>
+        <p class="contact__lede"><span class="otw">● Open to work</span> — ML / AI engineering &amp; research roles in the SF Bay Area and beyond, plus research collaborations. The fastest way to reach me is email.</p>
+        <a href="mailto:gmzhang@stanford.edu" class="btn btn--primary btn--lg">gmzhang@stanford.edu</a>
+        <div class="contact__socials">
+          <a href="https://github.com/geoz-lab" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/geozhang" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=PZgIiEoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
       </div>
-
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          Copyright &copy; 2021 GeoZ Lab
-          
-          . <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
-        </footer>
-
     </section>
-    
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
+  </main>
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Geo Zhang · Built dependency-free, hosted on GitHub Pages.</p>
+    <a href="#top" class="footer__top" aria-label="Back to top">↑ Top</a>
+  </footer>
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
-
-        return _offset;
-      }
-
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
-
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
-
-        if(forceSet) {
-          setParallaxPosition($doc, multiplier, $object);
-        } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
-        }
-      };
-
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
-
-            var bg_css = 'center ' + yPos + 'px';
-
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
-
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
-
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
-            }
-          ]
-        });
-
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-        });
-      });
-    </script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
