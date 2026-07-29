@@ -37,6 +37,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#notes">Notes</a>
         <a href="#awards">Awards</a>
         <a href="#education">Education</a>
         <a href="#contact" class="nav__cta">Contact</a>
@@ -619,10 +620,24 @@
       </ol>
     </section>
 
+    <!-- Notes -->
+    <section class="section" id="notes">
+      <div class="section__head reveal">
+        <span class="section__index">07</span>
+        <h2 class="section__title">Notes</h2>
+        <span class="section__count mono" id="notesCount"></span>
+      </div>
+      <p class="notes__lede reveal">Short writeups on what I'm training, reading, and debugging — written in Markdown, rendered straight from the repo.</p>
+      <div class="notes" id="notesList" data-limit="6">
+        <p class="notes__empty">Loading notes…</p>
+      </div>
+      <p class="notes__more mono" id="notesMore" hidden></p>
+    </section>
+
     <!-- Awards -->
     <section class="section" id="awards">
       <div class="section__head reveal">
-        <span class="section__index">07</span>
+        <span class="section__index">08</span>
         <h2 class="section__title">Awards &amp; Honors</h2>
       </div>
       <div class="awards">
@@ -667,7 +682,7 @@
     <!-- Education -->
     <section class="section" id="education">
       <div class="section__head reveal">
-        <span class="section__index">08</span>
+        <span class="section__index">09</span>
         <h2 class="section__title">Education</h2>
       </div>
       <div class="edu">
@@ -695,7 +710,7 @@
     <!-- Contact -->
     <section class="section section--contact" id="contact">
       <div class="contact reveal">
-        <span class="section__index">09</span>
+        <span class="section__index">10</span>
         <h2 class="contact__title">Let's build something.</h2>
         <p class="contact__lede"><span class="otw">● Open to work</span> — ML / AI engineering &amp; research roles in the SF Bay Area and beyond, plus research collaborations. The fastest way to reach me is email.</p>
         <a href="mailto:gmzhang@stanford.edu" class="btn btn--primary btn--lg">gmzhang@stanford.edu</a>
@@ -714,5 +729,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="md.js"></script>
+  <script src="posts.js"></script>
 </body>
 </html>

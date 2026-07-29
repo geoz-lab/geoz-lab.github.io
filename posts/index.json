@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "test",
+    "title": "Test note",
+    "date": "2026-07-28",
+    "tags": [
+      "test"
+    ],
+    "summary": "A quick test that the notes pipeline works end to end — write Markdown, rebuild the index, push.",
+    "minutes": 1
+  },
+  {
+    "slug": "hello-notes",
+    "title": "Starting a notes section",
+    "date": "2026-07-28",
+    "tags": [
+      "meta"
+    ],
+    "summary": "A place to keep short writeups on what I'm reading, training, and debugging — rendered straight from Markdown files in the repo.",
+    "minutes": 1
+  },
+  {
+    "slug": "markdown-reference",
+    "title": "Markdown formatting reference",
+    "date": "2026-07-27",
+    "tags": [
+      "meta",
+      "reference"
+    ],
+    "summary": "Every formatting feature the note renderer supports, in one page — headings, code, tables, lists, quotes and links. Delete this file once you have your own notes.",
+    "minutes": 1
+  }
+]

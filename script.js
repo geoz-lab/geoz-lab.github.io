@@ -50,8 +50,9 @@
 
   /* ---- Reveal on scroll ---- */
   var revealEls = document.querySelectorAll(".reveal");
+  var io = null;
   if ("IntersectionObserver" in window && !reduceMotion) {
-    var io = new IntersectionObserver(function (entries) {
+    io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry, i) {
         if (entry.isIntersecting) {
           var el = entry.target;
@@ -66,6 +67,13 @@
   } else {
     revealEls.forEach(function (el) { el.classList.add("in"); });
   }
+
+  /* Elements injected later (e.g. note cards) opt in through this. */
+  window.SiteReveal = function (els) {
+    Array.prototype.forEach.call(els, function (el) {
+      if (io) io.observe(el); else el.classList.add("in");
+    });
+  };
 
   /* ---- Scroll-spy: active nav link ---- */
   var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
