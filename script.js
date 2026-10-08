@@ -11,6 +11,30 @@
     yearEl.textContent = String(d.getFullYear());
   }
 
+  /* ---- Theme toggle (light / dark / follow OS) ----
+     The saved choice is applied inline in <head> to avoid a flash; this
+     only wires the button and keeps <meta name="theme-color"> in sync. */
+  var root = document.documentElement;
+  var systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function currentTheme() {
+    var set = root.getAttribute("data-theme");
+    if (set === "light" || set === "dark") return set;
+    return systemDark.matches ? "dark" : "light";
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    try { localStorage.setItem("theme", theme); } catch (e) {}
+  }
+
+  var themeBtn = document.getElementById("themeToggle");
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      applyTheme(currentTheme() === "dark" ? "light" : "dark");
+    });
+  }
+
   /* ---- Nav: scrolled state + scroll progress ---- */
   var nav = document.getElementById("nav");
   var progress = document.getElementById("scrollProgress");

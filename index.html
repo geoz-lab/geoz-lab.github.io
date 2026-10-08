@@ -13,8 +13,21 @@
   <meta property="og:description" content="Stanford PhD candidate working on LLMs, generative AI, reinforcement learning, and applied machine learning." />
   <meta property="og:url" content="https://geoz-lab.github.io" />
 
+  <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)" />
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Apply the saved theme before first paint to avoid a flash. -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,49 +56,26 @@
         <a href="#contact" class="nav__cta">Contact</a>
       </nav>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__right">
+        <button class="nav__theme" id="themeToggle" type="button" aria-label="Switch colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.3A8.6 8.6 0 0 1 9.7 3.5a8.6 8.6 0 1 0 10.8 10.8Z"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <!-- Hero -->
     <section class="hero" id="top">
-      <div class="hero__grid" aria-hidden="true"></div>
-      <div class="hero__glow" aria-hidden="true"></div>
-
-      <svg class="hero__mesh" viewBox="0 0 360 520" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
-        <defs>
-          <linearGradient id="meshgrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#e79a63"/>
-            <stop offset="1" stop-color="#efbf7c"/>
-          </linearGradient>
-        </defs>
-        <g stroke="url(#meshgrad)" stroke-width="0.8" fill="none" opacity="0.9">
-          <!-- central vein -->
-          <path d="M180 40 L180 120 L180 200 L180 280 L180 360 L180 440 L180 495"/>
-          <!-- left outline -->
-          <path d="M180 40 L140 95 L108 165 L92 245 L104 330 L140 405 L180 495"/>
-          <!-- right outline -->
-          <path d="M180 40 L220 95 L252 165 L268 245 L256 330 L220 405 L180 495"/>
-          <!-- ribs + cross mesh -->
-          <path d="M140 95 L180 120 M108 165 L180 200 M92 245 L180 280 M104 330 L180 360 M140 405 L180 440"/>
-          <path d="M220 95 L180 120 M252 165 L180 200 M268 245 L180 280 M256 330 L180 360 M220 405 L180 440"/>
-          <path d="M108 165 L180 120 M92 245 L180 200 M104 330 L180 280 M140 405 L180 360"/>
-          <path d="M252 165 L180 120 M268 245 L180 200 M256 330 L180 280 M220 405 L180 360"/>
-        </g>
-        <g fill="url(#meshgrad)" class="hero__nodes">
-          <circle cx="180" cy="40" r="2.4"/><circle cx="180" cy="120" r="2"/><circle cx="180" cy="200" r="2"/>
-          <circle cx="180" cy="280" r="2"/><circle cx="180" cy="360" r="2"/><circle cx="180" cy="440" r="2"/>
-          <circle cx="180" cy="495" r="2.4"/>
-          <circle cx="140" cy="95" r="1.8"/><circle cx="108" cy="165" r="1.8"/><circle cx="92" cy="245" r="1.8"/>
-          <circle cx="104" cy="330" r="1.8"/><circle cx="140" cy="405" r="1.8"/>
-          <circle cx="220" cy="95" r="1.8"/><circle cx="252" cy="165" r="1.8"/><circle cx="268" cy="245" r="1.8"/>
-          <circle cx="256" cy="330" r="1.8"/><circle cx="220" cy="405" r="1.8"/>
-        </g>
-      </svg>
-
       <div class="hero__content">
         <p class="hero__eyebrow"><span class="dot"></span> Stanford University · Energy Resources Engineering</p>
         <h1 class="hero__title">Geo&nbsp;Zhang</h1>
@@ -123,8 +113,8 @@
       </div>
 
       <ul class="hero__stats" aria-label="Highlights">
-        <li><span class="num" data-count="15">0</span><span class="plus">+</span><span class="lbl">Publications</span></li>
-        <li><span class="num" data-count="150">0</span><span class="plus">+</span><span class="lbl">Citations</span></li>
+        <li><span class="num" data-count="20">0</span><span class="plus">+</span><span class="lbl">Publications</span></li>
+        <li><span class="num" data-count="170">0</span><span class="plus">+</span><span class="lbl">Citations</span></li>
         <li><span class="num" data-count="60">0</span><span class="plus">+</span><span class="lbl">Peer Reviews</span></li>
       </ul>
     </section>
@@ -146,8 +136,8 @@
         </p>
         <p>
           I've shipped ML systems at <strong>TikTok</strong>, <strong>Valuenex</strong>,
-          <strong>Chevron</strong>, and <strong>Fervo Energy</strong>, and authored 15+ papers
-          (150+ citations) across AI and computational science. I care about the full arc — from a
+          <strong>Chevron</strong>, and <strong>Fervo Energy</strong>, and authored 20 papers
+          (170+ citations, h-index 9) across AI and computational science. I care about the full arc — from a
           research idea to a model running reliably at scale — and about translating between
           researchers, engineers, and stakeholders to get there.
         </p>
@@ -280,7 +270,7 @@
             <p class="timeline__org">Stanford University · SUETRI-A (Energy Transition Research Institute)</p>
             <ul>
               <li>Lead ML + subsurface research applying multimodal LLMs, reinforcement learning, and generative vision to energy-transition problems.</li>
-              <li>Authored 15+ peer-reviewed papers (150+ citations) spanning AI, carbon storage, geothermal, and hydrogen storage.</li>
+              <li>Authored 20 peer-reviewed papers (170+ citations, h-index 9) spanning AI, carbon storage, geothermal, and hydrogen storage.</li>
             </ul>
           </div>
         </li>
@@ -467,23 +457,46 @@
         <h2 class="section__title">Publications</h2>
       </div>
       <p class="pub__profile reveal">
-        <strong>15+ publications</strong> · <strong>150+ citations</strong> · <strong>60+ peer reviews</strong> —
-        <a href="https://scholar.google.com/citations?user=PZgIiEoAAAAJ" target="_blank" rel="noopener">Google Scholar profile ↗</a>
+        Peer-reviewed work across machine learning, carbon storage, geothermal, and pore-scale physics.
+        Full list and metrics on my <a href="https://scholar.google.com/citations?user=PZgIiEoAAAAJ" target="_blank" rel="noopener">Google Scholar profile ↗</a>
       </p>
+      <ul class="pub__metrics reveal">
+        <li><b>20</b> publications</li>
+        <li><b>171</b> citations</li>
+        <li>h-index <b>9</b></li>
+        <li>i10-index <b>7</b></li>
+        <li><b>60+</b> peer reviews</li>
+      </ul>
       <ol class="pubs">
         <li class="pub reveal">
           <span class="pub__year mono">2026</span>
           <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Cheng, J., Chen, H. Ranked by position: order sensitivity as an exploitable attack surface in LLM listwise recommenders.</p>
+            <p class="pub__venue">arXiv preprint <a href="https://arxiv.org/abs/2607.24869" target="_blank" rel="noopener">arXiv:2607.24869</a></p>
+          </div>
+          <span class="pub__cites mono" title="Citations">2</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2026</span>
+          <div class="pub__body">
             <p class="pub__title"><strong>Zhang, G.</strong>, Li, E., Kovscek, A.R. Data-efficient generation of pore-scale microstructures for rock-on-chip design.</p>
-            <p class="pub__venue">Lab on a Chip <em>(under revision)</em></p>
+            <p class="pub__venue">Lab on a Chip</p>
           </div>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2025</span>
           <div class="pub__body">
-            <p class="pub__title"><strong>Zhang, G.</strong>, Yin, D., Kim, T.W., Kovscek, A.R. Leveraging large language models for carbon market insights: news sentiment and price dynamics.</p>
-            <p class="pub__venue">SPE Western Regional Meeting · SPE-224146-MS</p>
+            <p class="pub__title">Beine, I., <strong>Zhang, G.</strong>, Kovscek, A.R. Dual-permeability micromodels to visualize mechanical displacement and capillary entry at reservoir–caprock interfaces for hydrogen storage.</p>
+            <p class="pub__venue">AGU Fall Meeting 2025</p>
           </div>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
+            <p class="pub__title">Lei, W., Yang, Y., Yang, S., <strong>Zhang, G.</strong>, et al. Advancing sustainable energy solutions with microfluidic porous media.</p>
+            <p class="pub__venue">Lab on a Chip · 25(14), 3374–3410</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">18</span>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2025</span>
@@ -496,41 +509,18 @@
         <li class="pub reveal">
           <span class="pub__year mono">2025</span>
           <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Yin, D., Kim, T.W., Kovscek, A.R. Leveraging large language models for carbon market insights: news sentiment and price dynamics.</p>
+            <p class="pub__venue">SPE Western Regional Meeting · SPE-224146-MS</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">1</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2025</span>
+          <div class="pub__body">
             <p class="pub__title"><strong>Zhang, G.</strong>, Burger, J., Schembre-McCabe, J., Kovscek, A.R. Pore-scale mechanisms of salt precipitation in heterogeneous media under geological carbon storage conditions.</p>
             <p class="pub__venue">Lab on a Chip · 25(19), 4957–4971</p>
           </div>
-          <span class="pub__cites mono" title="Citations">5</span>
-        </li>
-        <li class="pub reveal">
-          <span class="pub__year mono">2025</span>
-          <div class="pub__body">
-            <p class="pub__title">Lei, W., Yang, Y., Yang, S., <strong>Zhang, G.</strong>, et al. Advancing sustainable energy solutions with microfluidic porous media.</p>
-            <p class="pub__venue">Lab on a Chip</p>
-          </div>
-          <span class="pub__cites mono" title="Citations">13</span>
-        </li>
-        <li class="pub reveal">
-          <span class="pub__year mono">2025</span>
-          <div class="pub__body">
-            <p class="pub__title">Beine, I., <strong>Zhang, G.</strong>, Kovscek, A.R. Dual-permeability micromodels to visualize mechanical displacement and capillary entry at reservoir–caprock interfaces for hydrogen storage.</p>
-            <p class="pub__venue">AGU Fall Meeting 2025</p>
-          </div>
-        </li>
-        <li class="pub reveal">
-          <span class="pub__year mono">2024</span>
-          <div class="pub__body">
-            <p class="pub__title"><strong>Zhang, G.</strong>, Norbeck, J., Smith, A., Dadi, S., Galban, G.E. Integrating carbon sequestration in enhanced geothermal systems through surface dissolution.</p>
-            <p class="pub__venue">SPE Western Regional Meeting · SPE-218898-MS</p>
-          </div>
-          <span class="pub__cites mono" title="Citations">3</span>
-        </li>
-        <li class="pub reveal">
-          <span class="pub__year mono">2024</span>
-          <div class="pub__body">
-            <p class="pub__title"><strong>Zhang, G.</strong>, Nazari, N., Kovscek, A.R. In situ pH measurement in microfluidic porous media indicated by surfaces functionalized with polyaniline (PAni).</p>
-            <p class="pub__venue">Colloids and Interfaces</p>
-          </div>
-          <span class="pub__cites mono" title="Citations">3</span>
+          <span class="pub__cites mono" title="Citations">9</span>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2024</span>
@@ -539,6 +529,22 @@
             <p class="pub__venue">SPE/AAPG/SEG Unconventional Resources Technology Conference · D031S062R001</p>
           </div>
           <span class="pub__cites mono" title="Citations">1</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2024</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Nazari, N., Kovscek, A.R. In situ pH measurement in microfluidic porous media indicated by surfaces functionalized with polyaniline (PAni).</p>
+            <p class="pub__venue">Colloids and Interfaces · 8(1), 9</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">3</span>
+        </li>
+        <li class="pub reveal">
+          <span class="pub__year mono">2024</span>
+          <div class="pub__body">
+            <p class="pub__title"><strong>Zhang, G.</strong>, Norbeck, J., Smith, A., Dadi, S., Galban, G.E. Integrating carbon sequestration in enhanced geothermal systems through surface dissolution.</p>
+            <p class="pub__venue">SPE Western Regional Meeting · SPE-218898-MS</p>
+          </div>
+          <span class="pub__cites mono" title="Citations">3</span>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2024</span>
@@ -565,9 +571,9 @@
           <span class="pub__year mono">2022</span>
           <div class="pub__body">
             <p class="pub__title">Li, H., Xu, A., <strong>Zhang, G.</strong>, Shan, Y. Rayleigh–Taylor instability under multi-mode perturbation: discrete Boltzmann modeling with tracers.</p>
-            <p class="pub__venue">Communications in Theoretical Physics</p>
+            <p class="pub__venue">Communications in Theoretical Physics · 74(11), 115601</p>
           </div>
-          <span class="pub__cites mono" title="Citations">16</span>
+          <span class="pub__cites mono" title="Citations">17</span>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2021</span>
@@ -581,23 +587,23 @@
           <span class="pub__year mono">2019</span>
           <div class="pub__body">
             <p class="pub__title"><strong>Zhang, G.</strong>, Zhang, Y., Xu, A., Li, Y. Microflow effects on the hydraulic aperture of single rough fractures.</p>
-            <p class="pub__venue">Advances in Geo-Energy Research</p>
+            <p class="pub__venue">Advances in Geo-Energy Research · 3(1), 104–114</p>
           </div>
-          <span class="pub__cites mono" title="Citations">33</span>
+          <span class="pub__cites mono" title="Citations">34</span>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2019</span>
           <div class="pub__body">
             <p class="pub__title">Haustein, M.A., <strong>Zhang, G.</strong>, Schwarze, R. Segregation of granular materials in a pulsating pumping regime.</p>
-            <p class="pub__venue">Granular Matter</p>
+            <p class="pub__venue">Granular Matter · 21(4), 111</p>
           </div>
-          <span class="pub__cites mono" title="Citations">11</span>
+          <span class="pub__cites mono" title="Citations">12</span>
         </li>
         <li class="pub reveal">
           <span class="pub__year mono">2019</span>
           <div class="pub__body">
             <p class="pub__title"><strong>Zhang, G.</strong>, Liu, B., Xu, A., Shan, Y., Li, Y. Morphology effect of surface structures on microchannel flow using the lattice Boltzmann method.</p>
-            <p class="pub__venue">Geofluids</p>
+            <p class="pub__venue">Geofluids · 2019</p>
           </div>
           <span class="pub__cites mono" title="Citations">9</span>
         </li>
@@ -605,7 +611,7 @@
           <span class="pub__year mono">2018</span>
           <div class="pub__body">
             <p class="pub__title"><strong>Zhang, G.</strong>, Tian, Y., Li, Y. Numerical study on the mechanism of fluid flow through single rough fractures with different JRC.</p>
-            <p class="pub__venue">Scientia Sinica Physica, Mechanica &amp; Astronomica</p>
+            <p class="pub__venue">Scientia Sinica Physica, Mechanica &amp; Astronomica · 49(1), 014701</p>
           </div>
           <span class="pub__cites mono" title="Citations">22</span>
         </li>
@@ -613,7 +619,7 @@
           <span class="pub__year mono">2017</span>
           <div class="pub__body">
             <p class="pub__title"><strong>Zhang, G.</strong>, Feng, C., Gong, W., Li, Y. Simulation and analysis of the effect of roughness elements on fluid flow through a single fracture based on the lattice Boltzmann method.</p>
-            <p class="pub__venue">Scientia Sinica Physica, Mechanica &amp; Astronomica</p>
+            <p class="pub__venue">Scientia Sinica Physica, Mechanica &amp; Astronomica · 47(2), 024701</p>
           </div>
           <span class="pub__cites mono" title="Citations">14</span>
         </li>
@@ -731,5 +737,6 @@
   <script src="script.js"></script>
   <script src="md.js"></script>
   <script src="posts.js"></script>
+  <script src="ask.js"></script>
 </body>
 </html>
