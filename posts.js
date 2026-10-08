@@ -111,7 +111,7 @@
     var navEl = document.getElementById("postNav");
 
     if (!slug) {
-      articleEl.innerHTML = "<p>No note specified. <a href=\"index.html#notes\">Back to all notes</a>.</p>";
+      articleEl.innerHTML = "<p>No note specified. <a href=\"index.html\">Back to home</a>.</p>";
       return;
     }
 
@@ -192,7 +192,7 @@
       articleEl.innerHTML = "<p><strong>" + esc(err.message) + "</strong></p>" +
         '<p>Looked for <code>posts/' + esc(slug) + ".md</code>. " +
         'If you opened this page from the filesystem, serve it with <code>python3 -m http.server 8000</code> instead.</p>' +
-        '<p><a href="index.html#notes">← Back to all notes</a></p>';
+        '<p><a href="index.html">← Back to home</a></p>';
       if (titleEl) titleEl.textContent = "Note unavailable";
     });
   }

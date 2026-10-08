@@ -330,7 +330,7 @@ strong { color: var(--text-strong); font-weight: 600; }
   background: var(--bg-2);
 }
 
-.energy__link { margin-top: 26px; color: var(--muted); font-size: .94rem; }
+.sustain__link { margin-top: 26px; color: var(--muted); font-size: .94rem; }
 
 /* ---------- Timeline (Experience) ---------- */
 .timeline { list-style: none; position: relative; padding-left: 28px; }
@@ -408,22 +408,6 @@ strong { color: var(--text-strong); font-weight: 600; }
   background: var(--surface);
 }
 .pub__cites::after { content: " cited"; color: var(--faint); }
-
-/* ---------- Awards ---------- */
-.awards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-.award {
-  display: flex; gap: 16px; align-items: flex-start;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: 20px 22px; box-shadow: var(--shadow);
-  transition: border-color .25s var(--ease), background .25s var(--ease);
-}
-.award:hover { border-color: var(--border-2); background: var(--surface-2); }
-.award__year {
-  flex-shrink: 0; color: var(--faint); font-size: .8rem;
-  border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 3px 8px;
-}
-.award__body h3 { font-size: 1.05rem; line-height: 1.35; margin-bottom: 4px; color: var(--text-strong); }
-.award__body p { color: var(--muted); font-size: .9rem; }
 
 /* ---------- Education ---------- */
 .edu { display: flex; flex-direction: column; gap: 16px; }
@@ -589,7 +573,7 @@ strong { color: var(--text-strong); font-weight: 600; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .cards, .projects, .notes, .awards { grid-template-columns: 1fr; }
+  .cards, .projects, .notes { grid-template-columns: 1fr; }
   .post { padding-top: 108px; }
   .hero { padding-top: 132px; }
 }
